@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spending Overview - Student Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">MyMoney</div>
+
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="add.html">Add</a>
+      <a href="transactions.html">History</a>
+      <a href="goal.html">Goal</a>
+      <a href="spending.html">Spent</a>
+      <a href="saving.html">Saved</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-left">
+      <span class="hero-badge">Student Finance Manager</span>
+      <h1>Spending Overview</h1>
+      <p>See how much you spent and where your money went.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="spending" class="panel">
+      <div class="section-header">
+        <div>
+          <h2>Spending Overview</h2>
+          <p class="section-text">See how much you spent and where you spent it.</p>
+        </div>
+      </div>
+
+      <p class="big-number">Total Spent: <strong id="totalSpent">0 TL</strong></p>
+      <ul id="spendingCategories" class="simple-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Internet Programming Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaction History - Student Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">MyMoney</div>
+
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="add.html">Add</a>
+      <a href="transactions.html">History</a>
+      <a href="goal.html">Goal</a>
+      <a href="spending.html">Spent</a>
+      <a href="saving.html">Saved</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-left">
+      <span class="hero-badge">Student Finance Manager</span>
+      <h1>Transaction History</h1>
+      <p>Review all your income and expense records.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="transactions" class="panel">
+      <div class="section-header">
+        <div>
+          <h2>Transaction History</h2>
+          <p class="section-text">Review all your recent records here.</p>
+        </div>
+
+        <button id="clearAllBtn" class="secondary-btn" type="button">Clear All</button>
+      </div>
+
+      <ul id="transactionList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Internet Programming Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

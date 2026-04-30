@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savings Goal - Student Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">MyMoney</div>
+
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="add.html">Add</a>
+      <a href="transactions.html">History</a>
+      <a href="goal.html">Goal</a>
+      <a href="spending.html">Spent</a>
+      <a href="saving.html">Saved</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-left">
+      <span class="hero-badge">Student Finance Manager</span>
+      <h1>Savings Goal</h1>
+      <p>Set your target and track your progress.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="goal" class="panel">
+      <div class="section-header">
+        <div>
+          <h2>Savings Goal</h2>
+          <p class="section-text">Set your target and track your progress.</p>
+        </div>
+      </div>
+
+      <form id="goalForm" class="goal-form">
+        <input type="text" id="goalName" placeholder="Goal Name" required />
+        <input type="number" id="goalAmount" placeholder="Target Amount" required />
+        <button type="submit">Save Goal</button>
+      </form>
+
+      <div class="goal-display">
+        <div class="goal-top">
+          <h3 id="savedGoalName">No Goal Set</h3>
+          <span class="goal-badge">Savings Plan</span>
+        </div>
+
+        <p>Target: <span id="savedGoalAmount">0</span> TL</p>
+        <p>Saved: <span id="savedMoney">0</span> TL</p>
+
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Internet Programming Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

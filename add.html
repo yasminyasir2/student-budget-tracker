@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Transaction - Student Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">MyMoney</div>
+
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="add.html">Add</a>
+      <a href="transactions.html">History</a>
+      <a href="goal.html">Goal</a>
+      <a href="spending.html">Spent</a>
+      <a href="saving.html">Saved</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-left">
+      <span class="hero-badge">Student Finance Manager</span>
+      <h1>Add Transaction</h1>
+      <p>Add your income or expense in a few seconds.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="add-transaction" class="panel">
+      <div class="section-header">
+        <div>
+          <h2>Add Transaction</h2>
+          <p class="section-text">Add your income or expense in a few seconds.</p>
+        </div>
+      </div>
+
+      <form id="transactionForm" class="form-grid">
+        <input type="text" id="description" placeholder="Description" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+
+        <select id="type" required>
+          <option value="">Select Type</option>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="School">School</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Personal">Personal</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <input type="date" id="date" required />
+        <button type="submit">Add Transaction</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Internet Programming Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

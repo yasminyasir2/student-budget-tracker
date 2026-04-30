@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">MyMoney</div>
+
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="add.html">Add</a>
+      <a href="transactions.html">History</a>
+      <a href="goal.html">Goal</a>
+      <a href="spending.html">Spent</a>
+      <a href="saving.html">Saved</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-left">
+      <span class="hero-badge">Student Finance Manager</span>
+      <h1>Track your money</h1>
+      <p>Manage your income, expenses, savings, and goals in one simple place.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome-panel">
+      <div>
+        <span class="hero-badge">Dashboard</span>
+        <h2>Welcome back to MyMoney</h2>
+        <p>
+          Here is a quick overview of your income, expenses, savings, and recent activity.
+        </p>
+      </div>
+    </section>
+
+    <section id="dashboard" class="summary-section">
+      <div class="card income-card">
+        <div class="card-label">Total Income</div>
+        <p id="totalIncome">0 TL</p>
+      </div>
+
+      <div class="card expense-card">
+        <div class="card-label">Total Expenses</div>
+        <p id="totalExpense">0 TL</p>
+      </div>
+
+      <div class="card balance-card">
+        <div class="card-label">Balance</div>
+        <p id="balance">0 TL</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-header">
+        <div>
+          <h2>Quick Actions</h2>
+          <p class="section-text">Choose what you want to manage next.</p>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <a href="add.html">Add Transaction</a>
+        <a href="transactions.html">View History</a>
+        <a href="goal.html">Set Goal</a>
+        <a href="spending.html">Check Spending</a>
+      </div>
+    </section>
+
+    <section class="dashboard-grid">
+      <div class="panel">
+        <div class="section-header">
+          <div>
+            <h2>Recent Transactions</h2>
+            <p class="section-text">Your latest money activity.</p>
+          </div>
+        </div>
+
+        <ul id="recentTransactions" class="simple-list"></ul>
+      </div>
+
+      <div class="panel">
+        <div class="section-header">
+          <div>
+            <h2>Goal Preview</h2>
+            <p class="section-text">A quick look at your saving progress.</p>
+          </div>
+        </div>
+
+        <div class="goal-display">
+          <div class="goal-top">
+            <h3 id="savedGoalName">No Goal Set</h3>
+            <span class="goal-badge">Savings Plan</span>
+          </div>
+
+          <p>Target: <span id="savedGoalAmount">0</span> TL</p>
+          <p>Saved: <span id="savedMoney">0</span> TL</p>
+
+          <div class="progress-bar">
+            <div id="progressFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Internet Programming Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
